@@ -24,7 +24,7 @@ data:
         {
           "name": "ssd",
           "re": ["loop*", "vd*"],
-          "policy": "RAW",
+          "policy": "LVM",
          "nodeLabel": "kubernetes.io/hostname"
         },
          {
