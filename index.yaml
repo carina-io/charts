@@ -3,13 +3,13 @@ entries:
   carina-csi-driver:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-01-10T15:10:36.1017435+08:00"
+    created: "2022-01-10T15:16:20.6963087+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: 9886306c70950422087b0a4850fc91372ab146a85e87807dd4e497d8aa3e12f1
+    digest: 2194f00d428fcd55be05914326cdeba4d78f475bdccb8d4f592bf424532a0e2d
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -25,13 +25,13 @@ entries:
     version: v0.9.1
   - apiVersion: v2
     appVersion: 0.9.1
-    created: "2022-01-10T15:10:36.1056779+08:00"
+    created: "2022-01-10T15:16:20.699328+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: b4ed8559f92e7353a789e7374a1943b35ae5b6d9ba9d6eb1795f2b249f745023
+    digest: ed2c7c385463b3c82b63ec277da44e93b2738d19c3ca622397317ea7e0158973
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -47,13 +47,13 @@ entries:
     version: v0.9.1
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2022-01-10T15:10:36.103365+08:00"
+    created: "2022-01-10T15:16:20.6978552+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: 84f7d21571927e7d9066f653483a4bc64beecd9eb1b408392092d0e7565d1603
+    digest: beb7cc5e1dc83996a29f7c91df3196bb0025a717c47d967871ddbf30e4682f2f
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -67,4 +67,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/carina-io/charts/main/v0.9.0/carina-csi-driver-v0.9.0.tgz
     version: v0.9.0
-generated: "2022-01-10T15:10:36.0983423+08:00"
+generated: "2022-01-10T15:16:20.6939903+08:00"
