@@ -8,13 +8,17 @@
 ### add the Helm chart repository
 
 ```console
-helm repo add carina-csi-driver https://raw.githubusercontent.com/carina-io/charts/main
+helm repo add carina-csi-driver https://carina-io.github.io/charts
 ```
 
 ### search for all available chart versions
 
 ```console
 helm search repo -l carina-csi-driver
+```
+
+```console
+helm pull carina-csi-driver/carina-csi-driver --version v0.9.0
 ```
 
 ### update the repository
