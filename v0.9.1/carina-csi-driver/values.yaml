@@ -1,9 +1,9 @@
 carina-scheduler:
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/antmoveh/scheduler
+    repository: registry.cn-hangzhou.aliyuncs.com/antmoveh/carina-scheduler
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "v0.9-20211012111249"
+    tag: "v0.9.1"
 # Default values for carina-csi-driver.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -11,7 +11,7 @@ image:
   baseRepo: registry.cn-hangzhou.aliyuncs.com/antmoveh
   carina:
     repository: registry.cn-hangzhou.aliyuncs.com/antmoveh/carina
-    tag: v0.9.1-20211217165406
+    tag: v0.9.1
     pullPolicy: IfNotPresent
   csiProvisioner:
     repository: /csi-provisioner

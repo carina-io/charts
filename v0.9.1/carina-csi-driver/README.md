@@ -25,12 +25,12 @@ helm repo update
 
 ---
 
-## Carina Disk CSI Driver V0.9.0
+## Carina Disk CSI Driver V0.9.1
 
 ### install a specific version
 
 ```console
-helm install carina-csi-driver carina-csi-driver/carina-csi-driver --namespace kube-system --version v0.9.0
+helm install carina-csi-driver carina-csi-driver/carina-csi-driver --namespace kube-system --version v0.9.1
 ```
 
 ### uninstall CSI driver
