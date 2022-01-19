@@ -3,13 +3,13 @@ entries:
   carina-csi-driver:
   - apiVersion: v2
     appVersion: 0.9.1
-    created: "2022-01-13T17:59:52.1316018+08:00"
+    created: "2022-01-19T15:43:25.9811965+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: ccfb8aac37e0a40c8c1d9849af4b6634184045e58e91ca26a16c4392c8bef532
+    digest: 96773f6a8dd46695fe2d085033ce2bc55215997b7ad629a07593d98670dda06f
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -21,17 +21,17 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://github.com/carina-io/charts/releases/download/v0.9.1/carina-csi-driver-v0.9.1.tgz
+    - https://mirror.ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.1/carina-csi-driver-v0.9.1.tgz
     version: v0.9.1
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2022-01-13T17:59:52.1302553+08:00"
+    created: "2022-01-19T15:43:25.9799334+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: 4164a2d119e76515321ffcb9914f6548e82852850fe7af47af532a07924f6fe0
+    digest: b5bcea8621df8a9890328b55639e3a985682f97da26bbb031b8addaf0278262f
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -43,6 +43,6 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://github.com/carina-io/charts/releases/download/v0.9.0/carina-csi-driver-v0.9.0.tgz
+    - https://mirror.ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.0/carina-csi-driver-v0.9.0.tgz
     version: v0.9.0
-generated: "2022-01-13T17:59:52.1285292+08:00"
+generated: "2022-01-19T15:43:25.9781755+08:00"

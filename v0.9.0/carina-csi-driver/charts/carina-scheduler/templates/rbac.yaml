@@ -45,6 +45,9 @@ rules:
   - apiGroups: ["events.k8s.io"]
     resources: ["events"]
     verbs: ["create", "patch", "update"]
+  - apiGroups: ["storage.k8s.io"]
+    resources: ["csidrivers","csistoragecapacities"]
+    verbs: ["get", "list", "watch"]  
 
 
 ---

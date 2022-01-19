@@ -1,7 +1,7 @@
 ## Dependency versions
 
 HELMVERSION:= v0.9.0 v0.9.1 
-HELMREPO :=  https://github.com/carina-io/charts/releases/download
+HELMREPO :=  https://mirror.ghproxy.com/https://github.com/carina-io/charts/releases/download
 helmpackage:
 	@for var in $(HELMVERSION); do \
 		helm lint $$var/carina-csi-driver && helm package $$var/carina-csi-driver --debug --destination $$var/; \
