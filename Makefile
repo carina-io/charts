@@ -1,6 +1,6 @@
 ## Dependency versions
 
-HELMVERSION:= v0.9.0 v0.9.1 
+HELMVERSION:= v0.10.0 
 HELMREPO :=  https://mirror.ghproxy.com/https://github.com/carina-io/charts/releases/download
 helmpackage:
 	@for var in $(HELMVERSION); do \
