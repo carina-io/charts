@@ -1,7 +1,7 @@
 carina-scheduler:
   enabled: false
   image:
-    repository: registry.cn-hangzhou.aliyuncs.com/antmoveh/carina-scheduler
+    repository: registry.cn-hangzhou.aliyuncs.com/carina/carina-scheduler
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
     tag: "v0.10.0"
@@ -9,9 +9,9 @@ carina-scheduler:
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 image:
-  baseRepo: registry.cn-hangzhou.aliyuncs.com/antmoveh
+  baseRepo: registry.cn-hangzhou.aliyuncs.com/carina
   carina:
-    repository: registry.cn-hangzhou.aliyuncs.com/antmoveh/carina
+    repository: registry.cn-hangzhou.aliyuncs.com/carina/carina
     tag: v0.10.0
     pullPolicy: IfNotPresent
   csiProvisioner:
@@ -112,9 +112,9 @@ node:
   bcache: false
   initContainer:
     modprobe: 
-      # - dm_snapshot 
-      # - dm_mirror 
-      # - dm_thin_pool
+      - dm_snapshot
+      - dm_mirror
+      - dm_thin_pool
   enablePerfOptimization: true
   tolerations:
     # - key: "node-role.kubernetes.io/master"
