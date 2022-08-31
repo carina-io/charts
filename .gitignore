@@ -13,7 +13,7 @@
 v0.9.0/*.tgz
 v0.9.1/*.tgz
 v0.10.0/*.tgz
-
+v0.11.0/*.tgz
 # Dependency directories (remove the comment below to include it)
 # vendor/
 .idea
