@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/ubuntu/www/src/github.com/carina-io/charts'
+for var in v0.10.0 ; do \
+	helm lint $var/carina-csi-driver && helm package $var/carina-csi-driver --debug --destination $var/; \
+done
+helm repo index --url=https://mirror.ghproxy.com/https://github.com/carina-io/charts/releases/download   . \
+
+make: Leaving directory '/home/ubuntu/www/src/github.com/carina-io/charts'
+ 

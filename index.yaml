@@ -2,15 +2,15 @@ apiVersion: v1
 entries:
   carina-csi-driver:
   - apiVersion: v2
-    appVersion: 0.10.0
-    created: "2022-04-28T15:03:06.4069259+08:00"
+    appVersion: 0.11.0
+    created: "2022-08-31T14:29:38.639777+08:00"
     dependencies:
     - condition: carina-scheduler.enabled
       name: carina-scheduler
       repository: ""
       version: 0.1.0
     description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
-    digest: eaacf6301982562cd0ed73f24534311984ebded5199af8a5539af85a417e17e8
+    digest: 21d28feace0027716537bb267f8805520bca042ccd50b465c58841ce158ea0d4
     home: https://github.com/carina-io/carina.git
     icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
     maintainers:
@@ -22,11 +22,34 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://mirror.ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.10.0/carina-csi-driver-v0.10.0.tgz
+    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.11.0/carina-csi-driver-v0.11.0.tgz
+    version: v0.11.0
+  - apiVersion: v2
+    appVersion: 0.10.0
+    created: "2022-08-31T14:29:38.6383591+08:00"
+    dependencies:
+    - condition: carina-scheduler.enabled
+      name: carina-scheduler
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for carina-csi-driver;Carina is a standard kubernetes CSI plugin. Users can use standard kubernetes storage resources like storageclass/PVC/PV to request storage media.
+    digest: c909a6a6e39d751d2864818bb62eee145366cec956c31bb2dfa42599ac30bf5a
+    home: https://github.com/carina-io/carina.git
+    icon: https://user-images.githubusercontent.com/88021699/130191822-50112078-fad9-4516-b76b-8b7566d1bfc3.jpg
+    maintainers:
+    - email: support@beyondcent.com
+      name: bocloud
+      url: http://www.bocloud.com.cn
+    name: carina-csi-driver
+    sources:
+    - https://github.com/carina-io/carina.git
+    type: application
+    urls:
+    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.11.0/carina-csi-driver-v0.10.0.tgz
     version: v0.10.0
   - apiVersion: v2
     appVersion: 0.9.1
-    created: "2022-04-28T15:03:06.4092998+08:00"
+    created: "2022-08-31T14:29:38.6424157+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
@@ -44,11 +67,11 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://mirror.ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.1/carina-csi-driver-v0.9.1.tgz
+    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.1/carina-csi-driver-v0.9.1.tgz
     version: v0.9.1
   - apiVersion: v2
     appVersion: 0.9.0
-    created: "2022-04-28T15:03:06.4081317+08:00"
+    created: "2022-08-31T14:29:38.6412443+08:00"
     dependencies:
     - name: carina-scheduler
       repository: ""
@@ -66,6 +89,6 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://mirror.ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.0/carina-csi-driver-v0.9.0.tgz
+    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.9.0/carina-csi-driver-v0.9.0.tgz
     version: v0.9.0
-generated: "2022-04-28T15:03:06.4052092+08:00"
+generated: "2022-08-31T14:29:38.6364562+08:00"

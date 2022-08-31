@@ -8,17 +8,13 @@
 ### add the Helm chart repository
 
 ```console
-helm repo add carina-csi-driver https://carina-io.github.io
+helm repo add carina-csi-driver https://raw.githubusercontent.com/carina-io/charts/main
 ```
 
 ### search for all available chart versions
 
 ```console
 helm search repo -l carina-csi-driver
-```
-
-```console
-helm pull carina-csi-driver/carina-csi-driver --version v0.10.0
 ```
 
 ### update the repository
@@ -29,12 +25,12 @@ helm repo update
 
 ---
 
-## Carina Disk CSI Driver V0.10.0
+## Carina Disk CSI Driver V0.9.0
 
 ### install a specific version
 
 ```console
-helm install carina-csi-driver carina-csi-driver/carina-csi-driver --namespace kube-system --version v0.10.0
+helm install carina-csi-driver carina-csi-driver/carina-csi-driver --namespace kube-system --version v0.9.0
 ```
 
 ### uninstall CSI driver
@@ -121,30 +117,13 @@ The following table lists the configurable parameters of the latest  Disk CSI Dr
 | `node.resources.carina.requests.memory`            | carina memory requests limits                            | 20Mi         |
 | `node.logDir`                                      | node pod logDir                                          |/var/log/carina/  |
 | `node.configDir`                                   | node pod configDir                                       |/etc/carina      |
-| `installCRDs`                                      | install crd                                              |true  |
-| `serviceMonitor.enable`                            | controller minitor serviceMonitor                        |true  |
+| `installCRDs`                                      | install crd                                              |true  |      |
+| `serviceMonitor.enable`                            | controller minitor serviceMonitor                        |true  |      |
 | `webhook.enable`                                   | controller webhook                         |true  |      |
-| `config.schedulerStrategy`                                   | Disk group name scheduling policies : binpack select the disk capacity for PV just met requests. storage node, spreadout of the most select the remaining disk capacity for PV nodes                        |spreadout  |      |
-| `config.diskScanInterval`                                   | Disk scan interval, 0 to close the local disk scanning                          |300  |      |
-| `storage.lvm.fstype`                                   | storageclass config                         |xfs  |      |
-| `storage.lvm.disktype`                                   | storageclass config                          |lvm  |      |
-| `storage.lvm.reclaimPolicy`                                   | storageclass config                          |Delete  |      |
-| `storage.lvm.volumeBindingMode`                                   | storageclass config                          |WaitForFirstConsumer  |      |
-| `storage.raw.fstype`                                   | storageclass config                         |xfs  |      |
-| `storage.raw.disktype`                                   | storageclass config                          |raw  |      |
-| `storage.raw.reclaimPolicy`                                   | storageclass config                          |Delete  |      |
-| `storage.raw.volumeBindingMode`                                   | storageclass config                          |WaitForFirstConsumer  |      |
-
 ---
-
-#### Configration
-```console
- kubectl  get configmap -l class=carina 
-```
-
 
 #### storageClass
 
 ```console
- kubectl  get sc
+ kubectl --namespace={{ .Release.Namespace }} get sc 
 ```
