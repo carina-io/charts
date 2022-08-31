@@ -52,7 +52,7 @@ The following table lists the configurable parameters of the latest  Disk CSI Dr
 | `driver.attachRequired`                           | custom userAgent                                           | `true` |
 | `driver.podInfoOnMount`                           | userAgent suffix                                           | `true` |
 | `driver.volumeLifecycleModes`                     |  Persistent                                                | `Persistent` |
-| `image.baseRepo`                                  | base repository of driver images                           | `registry.cn-hangzhou.aliyuncs.com/antmoveh` |
+| `image.baseRepo`                                  | base repository of driver images                           | `registry.cn-hangzhou.aliyuncs.com/carina` |
 | `image.carina.repository`                         | carina-csi-driver docker image                             | `/carina`   |
 | `image.carina.tag`                                | carina-csi-driver docker image tag                         | `latest`  |
 | `image.carina.pullPolicy`                         | carina-csi-driver image pull policy                        | `IfNotPresent`   |

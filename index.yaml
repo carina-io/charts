@@ -45,7 +45,7 @@ entries:
     - https://github.com/carina-io/carina.git
     type: application
     urls:
-    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.11.0/carina-csi-driver-v0.10.0.tgz
+    - https://ghproxy.com/https:/github.com/carina-io/charts/releases/download/v0.10.0/carina-csi-driver-v0.10.0.tgz
     version: v0.10.0
   - apiVersion: v2
     appVersion: 0.9.1
