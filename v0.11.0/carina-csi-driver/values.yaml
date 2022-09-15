@@ -17,7 +17,7 @@ image:
   livenessProbe:
     repository: /livenessprobe
     tag: v2.7.0
-    pullPolicy: IfNotPresent   
+    pullPolicy: IfNotPresent 
   csiProvisioner:
     repository: /csi-provisioner
     tag: v2.2.2
@@ -56,7 +56,6 @@ controller:
     healthPort: 29602
   disableAvailabilitySetNodes: true
   provisionerWorkerThreads: 40
-  attacherWorkerThreads: 500
   logLevel: 5
   tolerations:
     - key: "node-role.kubernetes.io/master"
@@ -69,13 +68,6 @@ controller:
   podLabels: {}
   resources:
     csiProvisioner:
-      limits:
-        cpu: 200m
-        memory: 500Mi
-      requests:
-        cpu: 10m
-        memory: 20Mi
-    csiAttacher:
       limits:
         cpu: 200m
         memory: 500Mi
@@ -98,21 +90,21 @@ controller:
         memory: 20Mi
     carina:
       limits:
-        cpu: 300m
-        memory: 500Mi
+        cpu: 500m
+        memory: 128Mi
       requests:
-        cpu: 10m
-        memory: 20Mi
+        cpu: 300m
+        memory: 64Mi
 
 node:
   name: csi-carina-node # daemonset name
   logLevel: 2
   kubelet: /var/lib/kubelet
-  bcache: false
+  bcache: true
   initContainer:
     modprobe: 
       - dm_snapshot 
-      - dm_mirror 
+      - dm_mirror
       - dm_thin_pool
   enablePerfOptimization: true
   tolerations:
@@ -166,16 +158,26 @@ webhook:
 config:  
   schedulerStrategy: spreadout
   diskScanInterval: 300
+  diskSelector:
+  - name: "carina-vg-ssd" 
+    re: ["loop2+"]
+    policy: "LVM"
+    nodeLabel: "kubernetes.io/hostname"
+  - name: "carina-raw-ssd" 
+    re: ["loop3+"]
+    policy: "RAW"
+    nodeLabel: "kubernetes.io/hostname"
+
   
 storage:
+  create: true
   # file system
-  lvm: 
-    fstype: xfs
-    disktype: carina-vg-ssd
+  StorageClass: 
+  - fstype: xfs
+    disktype: carina-vg-ssd  # as same as diskSelector[0].name
     reclaimPolicy: Delete
     volumeBindingMode: WaitForFirstConsumer
-  raw: 
-    fstype: xfs
-    disktype: carina-raw-ssd
+  - fstype: xfs
+    disktype: carina-raw-ssd #as same as diskSelector[1].name
     reclaimPolicy: Delete  
     volumeBindingMode: WaitForFirstConsumer    
